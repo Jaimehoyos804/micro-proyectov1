@@ -18,6 +18,4 @@ const proyectos = require('./routes/proyecto')
 // middlewares
 app.use('/api/proyectos', proyectos)
 
-
-
 module.exports = app

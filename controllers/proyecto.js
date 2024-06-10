@@ -46,6 +46,7 @@ const createProyecto = async (req = request,
 //Listar Proyectos
 const getProyectos = async (req = request, 
     res = response) => {
+        console.log("Peticion a Getproyectos....")
     try {
         const proyectosDB = await Proyecto.find()
             .populate('tipoProyecto', 'nombre')
